@@ -1,0 +1,39 @@
+{
+  "project": "OPERATION BLACKSITE",
+  "version": "1.0.0",
+  "assetPolicy": "100% Original Procedural 3D Geometry, PBR Shaders, and Web Audio Synthesis",
+  "models": [
+    {
+      "id": "map_blacksite_harbor",
+      "type": "procedural_three_mesh",
+      "source": "src/world/MapFactory.ts",
+      "license": "MIT (Original Work)"
+    },
+    {
+      "id": "c4_explosive_pack",
+      "type": "procedural_three_mesh",
+      "source": "src/world/Interactables.ts",
+      "license": "MIT (Original Work)"
+    },
+    {
+      "id": "bot_tactical_operative",
+      "type": "procedural_three_mesh",
+      "source": "src/bots/BotAgent.ts",
+      "license": "MIT (Original Work)"
+    },
+    {
+      "id": "weapon_viewmodels_12",
+      "type": "procedural_three_mesh",
+      "source": "src/weapons/WeaponManager.ts",
+      "license": "MIT (Original Work)"
+    }
+  ],
+  "audio": [
+    {
+      "id": "procedural_sound_bank_20",
+      "type": "web_audio_synthesis",
+      "source": "src/audio/AudioLibrary.ts",
+      "license": "MIT (Original Work)"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "operation-blacksite",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Operation Blacksite — Tactical 3D First-Person Shooter (Three.js + TypeScript)",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/dev-server.mjs",
+    "build": "node scripts/build.mjs",
+    "preview": "node scripts/dev-server.mjs --preview",
+    "test": "node scripts/run-tests.mjs",
+    "test:unit": "node scripts/run-tests.mjs",
+    "test:browser": "node -e \"const { spawnSync } = require('node:child_process'), fs = require('node:fs'); const py = fs.existsSync('.venv/Scripts/python.exe') ? '.venv/Scripts/python.exe' : (process.platform === 'win32' ? 'python' : 'python3'); process.exit(spawnSync(py, ['scripts/browser-verify.py'], { stdio: 'inherit' }).status ?? 0);\""
+  },
+  "dependencies": {
+    "three": "0.170.0"
+  },
+  "devDependencies": {
+    "@types/three": "0.170.0",
+    "typescript": "5.6.3",
+    "vite": "5.4.11",
+    "vitest": "2.1.5"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
